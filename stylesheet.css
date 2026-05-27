@@ -87,14 +87,49 @@ img{
   transition:0.4s;
 }
 
-.nav-link:hover::after,
 .nav-link.active::after{
   width:100%;
 }
 
-.nav-link:hover{
-  color:#ff2fa0;
+@media(min-width:992px){
+
+  .nav-link:hover::after{
+    width:100%;
+  }
+
+  .nav-link:hover{
+    color:#ff2fa0;
+  }
+
 }
+
+@media(max-width:991px){
+
+  .nav-link.active::after{
+    width:0 !important;
+  }
+
+}
+
+.navbar-toggler{
+  border:none !important;
+  box-shadow:none !important;
+  outline:none !important;
+  background:none;
+}
+
+.menu-text{
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#111;
+  transition:0.3s;
+}
+
+.navbar-toggler:focus{
+  box-shadow:none !important;
+}
+
 
 /* HERO */
 
