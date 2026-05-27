@@ -45,17 +45,26 @@ img{
   width:60px;
 }
 
+.logo-text{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
 .logo h3{
   font-size:24px;
   color:#111;
   margin:0;
   font-weight:700;
+  line-height:1;
 }
 
 .logo p{
   margin:0;
   font-size:12px;
   color:#666;
+  line-height:1.2;
+  margin-top:2px;
 }
 
 .nav-link{
