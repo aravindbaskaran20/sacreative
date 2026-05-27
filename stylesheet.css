@@ -127,8 +127,9 @@ img{
   transition:0.3s;
 }
 
-.navbar-toggler:focus{
-  button:active{
+.navbar-toggler:focus,
+button:focus,
+button:active{
   outline:none !important;
   box-shadow:none !important;
 }
@@ -535,4 +536,37 @@ footer{
 
 .gallery-card:hover img{
   transform:scale(1.08);
+}
+
+@media(max-width:991px){
+
+  .hero{
+    padding-top:140px;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:58px;
+    line-height:1.1;
+  }
+
+  .hero p{
+    font-size:18px;
+  }
+
+  .hero-img img{
+    width:100%;
+    max-width:500px;
+    margin-top:40px;
+  }
+
+  .navbar-brand.logo{
+    max-width:220px;
+  }
+
+  .menu-text{
+    font-size:18px;
+  }
+   }
+
 }
